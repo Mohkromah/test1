@@ -1,0 +1,199 @@
+body {
+  font-family: 'poppins';
+}
+
+*:focus {
+  outline: none;
+}
+
+.navbar {
+  background: rgb(247, 245, 245);
+  padding: 0.1rem 4rem;
+}
+
+.navbar img {
+  height: 10vh;
+  width: auto;
+}
+
+.nav-link {
+  margin-right: 2rem;
+}
+
+nav .navbar-nav li a {
+  color: #fe840d !important;
+}
+
+nav .navbar-nav li a:hover {
+  color: #2dbe61 !important;
+  transition: 0.3s ease-out;
+}
+
+/* Buttons styles */
+
+.btn-success {
+  padding: 10px 25px !important;
+  background-color: #2dbe61;
+  transition: 0.3s ease-out;
+}
+
+.btn-outline-warning {
+  border: 1px solid white;
+  margin-top: 1rem;
+  padding: 10px 25px;
+  color: white;
+}
+
+.btn-outline-warning:hover {
+  background-color: #fe840d;
+  transition: 0.3s ease-out;
+}
+
+.infoBar {
+  background: #fe840d;
+  height: 7vh;
+  padding: 0 4rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.infoBar p {
+  margin-top: 15px;
+}
+
+.infoBar img {
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+.marg {
+  margin-left: 4rem;
+}
+
+/* Hero section Styling */
+
+#hero {
+  background: url(../img/hero.jpg);
+  background-size: cover;
+}
+
+.heroContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 6rem 4rem;
+  color: white;
+  height: 95vh;
+  width: 100%;
+}
+
+.heroContainer::before {
+  content: '';
+  position: absolute;
+  bottom: -5.9rem;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: white;
+  clip-path: polygon(100% 10%, 0 100%, 100% 100%);
+}
+
+.heroContainer .textContent {
+  width: 50%;
+}
+
+.sendMoney {
+  position: absolute;
+  padding: 3rem;
+  top: 16rem;
+  right: 6rem;
+  background: white;
+  color: rgb(59, 59, 59);
+  border-radius: 50px;
+  box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.1), 0 12px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.sendMoney h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.sendMoney label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sendMoney input {
+  border: none;
+  border-right: 1px solid #2dbe61;
+  padding: 7px 4rem 7px 7px;
+}
+
+.input2 select {
+  padding-right: 12.3rem;
+}
+
+.input3 select {
+  padding-right: 9rem;
+}
+
+.input1 {
+  margin-top: 1rem;
+  padding: 15px;
+  border: 1px solid #2dbe61;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.input1 select {
+  border: none;
+}
+
+/* Media query styling */
+
+@media screen and (max-width: 768px) {
+  .infoBar {
+    padding: 0 2rem;
+  }
+
+  .navbar {
+    padding: 0.1rem 2rem;
+  }
+
+  .navbar .btn-success {
+    margin: 1rem 0 2rem;
+  }
+
+  .heroContainer {
+    padding: 4rem 2rem;
+    height: 80vh;
+  }
+
+  .heroContainer::before {
+    content: '';
+    display: none;
+  }
+
+  .heroContainer h2 {
+    font-size: 1.7rem;
+  }
+
+  .heroContainer .display-3 {
+    font-size: 2.2rem;
+  }
+
+  .heroContainer .display-2 {
+    font-size: 3.5rem;
+  }
+
+  .heroContainer .textContent {
+    width: 100%;
+  }
+
+  .heroContainer .sendMoney {
+    display: none;
+  }
+}
