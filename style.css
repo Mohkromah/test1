@@ -1,0 +1,328 @@
+body {
+  font-family: 'poppins';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+.navbar {
+  background: rgb(247, 245, 245);
+  padding: 0.1rem 4rem;
+}
+
+.navbar img {
+  height: 10vh;
+  width: auto;
+}
+
+.nav-link {
+  margin-right: 2rem;
+}
+
+nav .navbar-nav li a {
+  color: #fe840d !important;
+}
+
+nav .navbar-nav li a:hover {
+  color: #2dbe61 !important;
+  transition: 0.3s ease-out;
+}
+
+/* Buttons styles */
+
+.btn-success {
+  padding: 10px 25px !important;
+  background-color: #2dbe61;
+  transition: 0.3s ease-out;
+}
+
+.btn-outline-warning {
+  border: 1px solid white;
+  margin-top: 1rem;
+  padding: 10px 25px;
+  color: white;
+}
+
+.btn-outline-warning:hover {
+  background-color: #fe840d;
+  transition: 0.3s ease-out;
+}
+
+.infoBar {
+  background: #fe840d;
+  height: 7vh;
+  padding: 0 4rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.infoBar p {
+  margin-top: 15px;
+}
+
+.infoBar img {
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+.marg {
+  margin-left: 7rem;
+}
+
+/* scroll to page top */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #2dbe61; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 70px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  animation: fade 1s;
+}
+
+#myBtn img {
+  height: 22px;
+}
+
+#myBtn:hover {
+  background-color: #fe840d; /* Add a dark-grey background on hover */
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* Hero section Styling */
+
+#hero {
+  background: url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.heroContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: 700px;
+  width: 100%;
+}
+
+.innerContent {
+  padding: 6rem 4rem;
+}
+
+.heroContainer::before {
+  content: '';
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: white;
+  clip-path: polygon(100% 10%, 0 100%, 100% 100%);
+}
+
+.sendMoney {
+  position: absolute;
+  padding: 3rem;
+  right: 4rem;
+  background: white;
+  color: rgb(59, 59, 59);
+  border-radius: 50px;
+  box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.1), 0 12px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.sendMoney h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.sendMoney label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sendMoney input {
+  border: none;
+  border-right: 1px solid #2dbe61;
+  padding: 7px 4rem 7px 7px;
+}
+
+.input2 select {
+  padding-right: 12.3rem;
+}
+
+.input3 select {
+  padding-right: 9rem;
+}
+
+.input1 {
+  margin-top: 1rem;
+  padding: 15px;
+  border: 1px solid #2dbe61;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.input1 select {
+  border: none;
+}
+
+/* services styling section */
+
+#services {
+  background: white;
+  color: darkgray;
+}
+
+#services h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+#services span {
+  background: #2dbe61;
+  height: 3px;
+  width: 70px;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#services h1 {
+  padding-bottom: 2rem !important;
+  color: black;
+}
+
+#services .btn-success {
+  margin-top: 1rem;
+}
+
+#services .box {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid darkgray;
+  text-align: center;
+}
+
+#services .box img {
+  height: 90px;
+}
+
+/* Tracking section styling */
+
+#tracking {
+  background: rgb(247, 245, 245);
+  color: darkgray;
+}
+
+#tracking img {
+  width: 500px;
+}
+
+#tracking h1 {
+  padding-bottom: 2rem !important;
+  color: black;
+}
+
+/* Media query styling */
+
+@media screen and (max-width: 768px) {
+  .infoBar {
+    padding: 0 2rem;
+    font-size: 0.6rem;
+  }
+
+  .infobar img {
+    height: 15px;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .marg {
+    margin-left: 1.6rem;
+  }
+
+  .navbar {
+    padding: 0.1rem 2rem;
+  }
+
+  .navbar .btn-success {
+    margin: 1rem 0 2rem;
+  }
+
+  #hero {
+    max-height: 540px;
+    min-height: 540px;
+  }
+
+  .heroContainer {
+    max-height: 540px;
+    min-height: 540px;
+  }
+
+  .innerContent {
+    padding: 4rem 2rem;
+  }
+
+  .heroContainer::before {
+    content: '';
+    display: none;
+  }
+
+  .heroContainer h2 {
+    font-size: 1.7rem;
+  }
+
+  .heroContainer .display-3 {
+    font-size: 2rem;
+  }
+
+  .heroContainer .display-2 {
+    font-size: 3rem;
+  }
+
+  .btn-outline-warning {
+    background: #fe840d;
+  }
+
+  #services .btn-success {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  #tracking img {
+    width: 287px;
+  }
+
+  #tracking .btn-outline-success {
+    width: 100%;
+    background: #2dbe61;
+    color: white;
+  }
+}
