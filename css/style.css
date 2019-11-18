@@ -235,7 +235,7 @@ p {
 /* Tracking section styling */
 
 #tracking {
-  background: rgb(247, 245, 245);
+  background: rgb(235, 233, 233);
   color: darkgray;
 }
 
@@ -248,11 +248,211 @@ p {
   color: black;
 }
 
+/* how section styling */
+
+#how {
+  background: white;
+  color: darkgray;
+}
+
+#how h1 {
+  padding-bottom: 2rem !important;
+  color: black;
+}
+
+#how img {
+  width: 550px;
+}
+
+#how .accordion {
+  text-align: center;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.panel p {
+  padding: 1rem 0 1rem 0;
+}
+
+#how .active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+#how .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#how .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 7px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+#how .active:after {
+  content: '\2796'; /* Unicode character for "minus" sign (-) */
+}
+
+/* partners section styling */
+
+#partner {
+  background: rgb(212, 211, 211);
+  display: flex;
+}
+
+#partner .innerContent {
+  padding: 10px 4rem;
+}
+
+#partner img {
+  height: 40px;
+  margin: 0 4.5rem;
+  cursor: pointer;
+}
+
+#partner img:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* why choose us section styling */
+
+#why {
+  background: rgb(235, 233, 233);
+  color: darkgray;
+}
+
+#why h1 {
+  padding-bottom: 2rem !important;
+  color: black;
+  text-align: center;
+}
+
+.content {
+  margin-top: 1rem;
+  background: white;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-bottom: 3px;
+}
+
+.content img {
+  float: left;
+  padding-right: 20px;
+  padding-top: 6px;
+  height: 80px;
+}
+
+/* Contact us section styling */
+
+#contact {
+  text-align: center;
+  background: url(../img/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.contactContainer {
+  background: rgba(45, 197, 97, 0.9);
+}
+
+#contact p {
+  padding: 1rem 0;
+}
+
+/* Newsletter section styling */
+
+#news {
+  position: relative;
+  text-align: center;
+  background: rgb(235, 233, 233);
+}
+
+#news h1 {
+  padding-bottom: 2rem !important;
+  color: black;
+}
+
+#news input {
+  border: none;
+  padding: 20px;
+  margin: 3px 0;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #2dbe61;
+}
+
+.newsSubmit {
+  margin: 1.5rem 0 !important;
+  background: #2dbe61;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.newsSubmit:hover {
+  transition: 0.4s ease-out;
+  opacity: 0.8;
+}
+
+/* Footer section styling */
+
+#footer {
+  background: white;
+}
+
+#footer hr {
+  margin: 1rem 0;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ul li {
+  display: inline-block;
+}
+
+.links li a {
+  color: black;
+}
+
+#footer .innerContent {
+  padding: 2rem 4rem;
+}
+
+#footer span {
+  color: #2dbe61;
+}
+
 /* Media query styling */
 
 @media screen and (max-width: 768px) {
   .infoBar {
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-size: 0.6rem;
   }
 
@@ -264,12 +464,16 @@ p {
     font-size: 2rem;
   }
 
+  .heading2 {
+    font-size: 2rem;
+  }
+
   .marg {
     margin-left: 1.6rem;
   }
 
   .navbar {
-    padding: 0.1rem 2rem;
+    padding: 0.1rem 1rem;
   }
 
   .navbar .btn-success {
@@ -281,13 +485,17 @@ p {
     min-height: 540px;
   }
 
+  .heroContainer br {
+    display: none;
+  }
+
   .heroContainer {
     max-height: 540px;
     min-height: 540px;
   }
 
   .innerContent {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
 
   .heroContainer::before {
@@ -316,6 +524,10 @@ p {
     width: 100%;
   }
 
+  #contact .btn-light {
+    width: 100%;
+  }
+
   #tracking img {
     width: 270px;
   }
@@ -324,5 +536,24 @@ p {
     width: 100%;
     background: #2dbe61;
     color: white;
+    margin-top: 1rem;
+  }
+
+  #how img {
+    width: 300px;
+    margin-top: 2rem;
+  }
+
+  #partner .innerContent {
+    padding: 10px 1rem;
+  }
+
+  #partner img {
+    height: 15px;
+    margin: 0 10px;
+  }
+
+  #why h1 {
+    text-align: left;
   }
 }
