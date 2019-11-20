@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'poppins';
 }
@@ -232,6 +238,11 @@ p {
   height: 90px;
 }
 
+#services .box h4 {
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
 /* Tracking section styling */
 
 #tracking {
@@ -396,8 +407,8 @@ p {
 
 #news input {
   border: none;
-  padding: 20px;
-  margin: 3px 0;
+  padding: 15px;
+  margin: 7px 0;
   width: 250px;
   border-radius: 10px;
   border: 1px solid #2dbe61;
@@ -424,28 +435,48 @@ p {
   background: white;
 }
 
-#footer hr {
-  margin: 1rem 0;
-}
-
-#footer ul {
-  list-style: none;
-}
-
-#footer ul li {
-  display: inline-block;
-}
-
-.links li a {
-  color: black;
-}
-
-#footer .innerContent {
+#footer .footerContainer {
   padding: 2rem 4rem;
 }
 
-#footer span {
+#footer .links {
+  list-style: none;
+  padding: 0;
+}
+
+#footer .links a {
+  color: black;
+}
+
+#footer .links a:hover {
   color: #2dbe61;
+  transition: 0.4s ease-out;
+  text-decoration: none;
+}
+
+#footer .links li {
+  display: inline-block;
+  padding-right: 45px;
+}
+
+#footer .icons {
+  list-style: none;
+}
+
+#footer .icons li {
+  display: inline-block;
+  padding-right: 4rem;
+}
+
+#footer .copyright {
+  padding: 1rem 4rem;
+  background: #fe840d;
+  color: white;
+  width: 100%;
+}
+
+#footer span {
+  color: black;
 }
 
 /* Media query styling */
@@ -555,5 +586,23 @@ p {
 
   #why h1 {
     text-align: left;
+  }
+
+  #footer .footerContainer {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #footer .links li {
+    padding-right: 15px;
+  }
+
+  #footer .icons li {
+    padding-right: 55px;
+  }
+
+  #footer .copyright {
+    padding: 1rem;
+    text-align: center;
   }
 }
