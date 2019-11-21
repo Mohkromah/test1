@@ -16,3 +16,26 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// testimonial carousel
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false
+    },
+    768: {
+      items: 2,
+      nav: false
+    },
+    1024: {
+      items: 3,
+      nav: false,
+      loop: true
+    }
+  }
+});
